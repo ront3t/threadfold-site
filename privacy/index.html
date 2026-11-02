@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Threadfold privacy policy</title>
+    <link rel="canonical" href="https://ront3t.github.io/threadfold-site/privacy/" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="bar">
+      <a href="https://ront3t.github.io/threadfold-site/">Threadfold</a>
+      <nav class="nav">
+        <a href="./">Privacy</a>
+        <a href="mailto:ront3t@gmail.com">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <p class="meta">Privacy policy · 1 November 2026</p>
+      <h1>Your chats stay in this browser.</h1>
+      <p>
+        Threadfold is a Chrome extension that organizes conversations on ChatGPT, Claude, Gemini, and Grok.
+        It has no account system and no application server. The notes you save do not pass through the publisher,
+        because there is no publisher server for that data.
+      </p>
+      <p>Contact: <a href="mailto:ront3t@gmail.com">ront3t@gmail.com</a></p>
+
+      <h2>What is stored on the device</h2>
+      <p>Threadfold writes one library in <code>chrome.storage.local</code> on this browser profile:</p>
+      <ul>
+        <li>Folder names, tags, and which saved chat sits in which folder.</li>
+        <li>Conversation titles, URLs, and snippets you choose to save. Full transcripts are not stored.</li>
+        <li>Prompts you save, including their text.</li>
+        <li>Your language choice.</li>
+        <li>A license key, if you enter one, plus the plan status and a random install id.</li>
+      </ul>
+      <p>
+        Storage is local, not Chrome sync. Threadfold does not upload that library to Google, to the chat sites, or to a backend of its own.
+        Export files (Markdown, and the print view used for PDF) are created on this device.
+      </p>
+
+      <h2>What is not collected</h2>
+      <ul>
+        <li>No analytics, advertising, or crash-reporting SDK.</li>
+        <li>No account, and no copy of your chat history.</li>
+        <li>The extension does not read pages other than ChatGPT, Claude, Gemini, and Grok.</li>
+        <li>It reads a conversation’s messages only when you export the open chat, and that text stays in the export file.</li>
+      </ul>
+
+      <h2>License checks</h2>
+      <p>
+        The build offered for install uses a local license check and does not contact a license server.
+        If a later build is switched to Lemon Squeezy, activating or rechecking a key sends only that key and an install id to
+        <code>api.lemonsqueezy.com</code>. Lemon Squeezy would be the seller of record.
+        Chat text, titles, snippets, and prompts are not part of that request.
+        The extension does not contain a Lemon Squeezy API secret.
+      </p>
+
+      <h2>Permissions</h2>
+      <ul>
+        <li><strong>storage</strong> — the local library described above, plus a short-lived export payload in session storage.</li>
+        <li><strong>Host access to the four chat sites</strong> — so the panel can read the conversation list that is already on screen, insert a prompt, and export the open chat.</li>
+        <li><strong>Host access to api.lemonsqueezy.com</strong> — declared so a paid build can check a license key. The current build’s local checker does not call it.</li>
+      </ul>
+
+      <h2>Children</h2>
+      <p>Threadfold is not directed at children under 13, and it does not knowingly collect personal information from them.</p>
+
+      <h2>Changes</h2>
+      <p>
+        If this policy changes, the date at the top changes with it.
+        Questions: <a href="mailto:ront3t@gmail.com">ront3t@gmail.com</a>.
+      </p>
+    </main>
+  </body>
+</html>
